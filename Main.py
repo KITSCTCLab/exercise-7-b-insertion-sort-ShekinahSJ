@@ -10,7 +10,7 @@ def insertionSort(array) -> List[int]:
       array[i]=temp
       
     #for j in range(l):
-      
+  return array  
       
 
 # data = [9, 5, 1, 4, 3]
