@@ -4,11 +4,14 @@ def insertionSort(array) -> List[int]:
   # Write your code here
   l=len(array)
   for i in range(1,l-1):
-    if array[i]<array[i-1]:
-      temp=array[i-1]
-      array[i-1]=array[i]
-      array[i]=temp
-      
+    j=i-1
+    while j!=0:
+      if array[i]<array[j]:
+        temp=array[j]
+        array[j]=array[i]
+        array[i]=temp
+      j-=j
+
     #for j in range(l):
   return array  
       
