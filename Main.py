@@ -9,6 +9,7 @@ def insertionSort(array) -> List[int]:
     while ((array[curitem]>item) and (curitem>-1)):
       array[curitem+1]=array[curitem]
       curitem=curitem-1
+    array[curitem+1]=item
 
     #for j in range(l):
   return array  
