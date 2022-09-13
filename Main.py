@@ -3,7 +3,7 @@ from typing import List
 def insertionSort(array) -> List[int]:
   # Write your code here
   l=len(array)
-  for i in range(1,l-1):
+  for i in range(1,l):
     item=array[i]
     curitem=i-1
     while ((array[curitem]>item) and (curitem>-1)):
